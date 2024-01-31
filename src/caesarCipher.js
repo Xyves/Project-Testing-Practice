@@ -1,6 +1,3 @@
-// export default
-// for (i = 97; i <= 122; i++) {
-//   console.log(String.fromCharCode(i));
 function Cipher(string, shift) {
   if (shift === 0) {
     return string;
@@ -14,10 +11,8 @@ function Cipher(string, shift) {
       let character = alphabet[shiftedValue];
       finalString += character;
     }
-    console.log(finalString);
+
     return finalString;
   }
 }
-// }
 module.exports = Cipher;
-Cipher("testing", 2);
